@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgray;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.icon-container {
+  display: flex;
+}
+
+.page-content {
+  margin: 1rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.pricing-col {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
+  opacity: 0.5;
+  border: 2px solid transparent;
+}
+
+.selected-col {
+  box-shadow: 0px 0px 12px 4px #80808066;
+  opacity: 1;
+  border: 2px solid #1b68a7 !important;
+}
+
+.pricing-col div {
+  padding: 0.3rem;
+}
+
+.light-bg {
+  background-color: #dff7ff;
+}
+
+.dark-bg {
+  background-color: #1b68a7;
+}
+
+.dark-font {
+  color: #1b68a7;
+}
+
+.white {
+  color: white;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-desc {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.row-desc div {
+  padding: 0.3rem 0.3rem 0.3rem 0;
+}
+
+.pricing-type-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 1rem 0;
+  gap: 10px;
+}
+
+.pricing-type-box {
+  border-radius: 4px;
+  padding: 1rem;
+  cursor: pointer;
+  border: 2px solid lightgray;
+}
+
+.payment-btns {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-separator {
+  opacity: 0.8;
+}
+
+.tnc {
+  opacity: 0.5;
+}
+
+.payment-upi {
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #1b68a7;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.payment-other {
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #1b68a7;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.payment-upi:active {
+  background-color: #1b68a7;
+  color: white;
+}
+
+.payment-other:active {
+  background-color: #1b68a7;
+  color: white;
+}
+
+/* Tablet CSS */
+@media screen and (min-width: 576px) {
+  .App {
+    font-size: 1rem;
+  }
+  .page-content {
+    margin: 1rem auto;
+    max-width: 45rem;
+    padding: 0 1rem;
+  }
+  .pricing-col {
+    width: 10rem;
+  }
+  .pricing-col div {
+    padding: 2rem;
+  }
+  .row-desc div {
+    padding: 2rem 2rem 2rem 0;
+  }
+  .pricing-type-box {
+    padding: 2rem 3.5rem;
+  }
+  .page-header {
+    padding: 2rem;
+  }
+  .pricing-type-container {
+    margin: 3rem 0;
+    gap: 20px;
+  }
+  .payment-btns {
+    margin: 1rem 10rem;
+  }
+}
+
+/* Desktop CSS */
+@media screen and (min-width: 768px) {
+}
